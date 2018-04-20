@@ -1,0 +1,220 @@
+{
+  "movie-elements": [
+    {
+      "id": "actor1",
+      "categoryId": "actor",
+      "name": "Robert DeNiro",
+      "cost": 1900.0
+    },
+    {
+      "id": "actor2",
+      "categoryId": "actor",
+      "name": "Christopher Walken",
+      "cost": 2100.0
+    },
+    {
+      "id": "actor3",
+      "categoryId": "actor",
+      "name": "Harrison Ford",
+      "cost": 2300.0
+    },
+    {
+      "id": "actor4",
+      "categoryId": "actor",
+      "name": "Michelle Pfeiffer",
+      "cost": 2500.0
+    },
+    {
+      "id": "actor5",
+      "categoryId": "actor",
+      "name": "Sissy Spacek",
+      "cost": 2700.0
+    },
+    {
+      "id": "actor6",
+      "categoryId": "actor",
+      "name": "Sigourney Weaver",
+      "cost": 2900.0
+    },
+    {
+      "id": "actor7",
+      "categoryId": "actor",
+      "name": "Phoebe Cates",
+      "cost": 3100.0
+    },
+    {
+      "id": "actor8",
+      "categoryId": "actor",
+      "name": "Whoopi Goldberg",
+      "cost": 3300.0
+    },
+    {
+      "id": "actor9",
+      "categoryId": "actor",
+      "name": "Kim Basinger",
+      "cost": 3500.0
+    },
+    {
+      "id": "animal1",
+      "categoryId": "animal",
+      "name": "Bella",
+      "cost": 750.0
+    },
+    {
+      "id": "animal2",
+      "categoryId": "animal",
+      "name": "Gizmo",
+      "cost": 750.0
+    },
+    {
+      "id": "animal3",
+      "categoryId": "animal",
+      "name": "Jack",
+      "cost": 950.0
+    },
+    {
+      "id": "animal4",
+      "categoryId": "animal",
+      "name": "Max",
+      "cost": 1150.0
+    },
+    {
+      "id": "animal5",
+      "categoryId": "animal",
+      "name": "Millie",
+      "cost": 750.0
+    },
+    {
+      "id": "animal6",
+      "categoryId": "animal",
+      "name": "Zeus",
+      "cost": 1750.0
+    },
+    {
+      "id": "animal7",
+      "categoryId": "animal",
+      "name": "Amos",
+      "cost": 1950.0
+    },
+    {
+      "id": "animal8",
+      "categoryId": "animal",
+      "name": "Fester",
+      "cost": 750.0
+    },
+    {
+      "id": "animal9",
+      "categoryId": "animal",
+      "name": "Marley",
+      "cost": 550.0
+    },
+    {
+      "id": "location1",
+      "categoryId": "location",
+      "name": "Indiramma Nagar",
+      "cost": 6625.0
+    },
+    {
+      "id": "location2",
+      "categoryId": "location",
+      "name": "Dharavi",
+      "cost": 6650.0
+    },
+    {
+      "id": "location3",
+      "categoryId": "location",
+      "name": "Saroj Nagar",
+      "cost": 6675.0
+    },
+    {
+      "id": "location4",
+      "categoryId": "location",
+      "name": "Mehbullahpur",
+      "cost": 6700.0
+    },
+    {
+      "id": "location5",
+      "categoryId": "location",
+      "name": "Bhalswa",
+      "cost": 6725.0
+    },
+    {
+      "id": "location6",
+      "categoryId": "location",
+      "name": "Satnami",
+      "cost": 6750.0
+    },
+    {
+      "id": "location7",
+      "categoryId": "location",
+      "name": "Nochikuppam",
+      "cost": 7000.0
+    },
+    {
+      "id": "location8",
+      "categoryId": "location",
+      "name": "Rajendra",
+      "cost": 7250.0
+    },
+    {
+      "id": "location9",
+      "categoryId": "location",
+      "name": "Basanti",
+      "cost": 7500.0
+    },
+    {
+      "id": "specialEffect1",
+      "categoryId": "specialEffect",
+      "name": "digital compositing",
+      "cost": 750.0
+    },
+    {
+      "id": "specialEffect2",
+      "categoryId": "specialEffect",
+      "name": "dolly zoom",
+      "cost": 750.0
+    },
+    {
+      "id": "specialEffect3",
+      "categoryId": "specialEffect",
+      "name": "match moving",
+      "cost": 1000.0
+    },
+    {
+      "id": "specialEffect4",
+      "categoryId": "specialEffect",
+      "name": "miniture effects",
+      "cost": 1250.0
+    },
+    {
+      "id": "specialEffect5",
+      "categoryId": "specialEffect",
+      "name": "morphing",
+      "cost": 1500.0
+    },
+    {
+      "id": "specialEffect6",
+      "categoryId": "specialEffect",
+      "name": "prosthetic makeup",
+      "cost": 1750.0
+    },
+    {
+      "id": "specialEffect7",
+      "categoryId": "specialEffect",
+      "name": "rotoscoping",
+      "cost": 2000.0
+    },
+    {
+      "id": "specialEffect8",
+      "categoryId": "specialEffect",
+      "name": "go motion",
+      "cost": 2250.0
+    },
+    {
+      "id": "specialEffect9",
+      "categoryId": "specialEffect",
+      "name": "virtual cinematography",
+      "cost": 2500.0
+    }
+  ]
+}
