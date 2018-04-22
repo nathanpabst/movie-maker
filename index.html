@@ -9,17 +9,22 @@
   <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
+
+  <div class="main-container">
+
   <!-- NAVIGATION -->
     <nav class="navbar navbar-default">
         <div class="container-fluid">
           <div class="navbar-header">
-              <h2 class="brand">Movie Maker</h2>
+              <a class="navbar-brand" href="#">Movie Maker</a>
+          </div> 
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <form class="navbar-form navbar-right" role="search">
                   <div class="form-group">
                     <input type="text" class="form-control" placeholder="Enter Budget">
                   </div>
                   <button type="submit" id="set-budget" class="btn btn-default">Set Budget</button>
-                </form>
+              </form>
           </div>
         </div>
       </nav>
@@ -31,252 +36,11 @@
       </div>
     </div>
     <!-- MOVIE ELEMENTS -->
-    <div id="actors">
-      <h3>Actors and Actresses</h3>
-      <div class="row">
-          <div class="col-lg-2">
-            <div class="input-group">
-              <span class="input-group-addon">
-                <input type="checkbox" aria-label="...">
-              </span>
-              <input type="text" class="form-control" aria-label="...">
-            </div><!-- /input-group -->
-          </div><!-- /.col-lg-6 -->
-          <div class="col-lg-2">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  <input type="checkbox" aria-label="...">
-                </span>
-                <input type="text" class="form-control" aria-label="...">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-          <div class="col-lg-2">
-            <div class="input-group">
-              <span class="input-group-addon">
-                <input type="radio" aria-label="...">
-              </span>
-              <input type="text" class="form-control" aria-label="...">
-            </div><!-- /input-group -->
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-        <div class="row">
-            <div class="col-lg-2">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  <input type="checkbox" aria-label="...">
-                </span>
-                <input type="text" class="form-control" aria-label="...">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-2">
-                <div class="input-group">
-                  <span class="input-group-addon">
-                    <input type="checkbox" aria-label="...">
-                  </span>
-                  <input type="text" class="form-control" aria-label="...">
-                </div><!-- /input-group -->
-              </div><!-- /.col-lg-6 -->
-            <div class="col-lg-2">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  <input type="radio" aria-label="...">
-                </span>
-                <input type="text" class="form-control" aria-label="...">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-          </div><!-- /.row -->
-          <div class="row">
-              <div class="col-lg-2">
-                <div class="input-group">
-                  <span class="input-group-addon">
-                    <input type="checkbox" aria-label="...">
-                  </span>
-                  <input type="text" class="form-control" aria-label="...">
-                </div><!-- /input-group -->
-              </div><!-- /.col-lg-6 -->
-              <div class="col-lg-2">
-                  <div class="input-group">
-                    <span class="input-group-addon">
-                      <input type="checkbox" aria-label="...">
-                    </span>
-                    <input type="text" class="form-control" aria-label="...">
-                  </div><!-- /input-group -->
-                </div><!-- /.col-lg-6 -->
-              <div class="col-lg-2">
-                <div class="input-group">
-                  <span class="input-group-addon">
-                    <input type="radio" aria-label="...">
-                  </span>
-                  <input type="text" class="form-control" aria-label="...">
-                </div><!-- /input-group -->
-              </div><!-- /.col-lg-6 -->
-            </div><!-- /.row -->
-    </div>        
-    <div id="animals">
-        <h3>Animals + Trainers</h3>
-        <div class="row">
-            <div class="col-lg-2">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  <input type="checkbox" aria-label="...">
-                </span>
-                <input type="text" class="form-control" aria-label="...">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-2">
-                <div class="input-group">
-                  <span class="input-group-addon">
-                    <input type="checkbox" aria-label="...">
-                  </span>
-                  <input type="text" class="form-control" aria-label="...">
-                </div><!-- /input-group -->
-              </div><!-- /.col-lg-6 -->
-            <div class="col-lg-2">
-              <div class="input-group">
-                <span class="input-group-addon">
-                  <input type="radio" aria-label="...">
-                </span>
-                <input type="text" class="form-control" aria-label="...">
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-          </div><!-- /.row -->
-          <div class="row">
-              <div class="col-lg-2">
-                <div class="input-group">
-                  <span class="input-group-addon">
-                    <input type="checkbox" aria-label="...">
-                  </span>
-                  <input type="text" class="form-control" aria-label="...">
-                </div><!-- /input-group -->
-              </div><!-- /.col-lg-6 -->
-              <div class="col-lg-2">
-                  <div class="input-group">
-                    <span class="input-group-addon">
-                      <input type="checkbox" aria-label="...">
-                    </span>
-                    <input type="text" class="form-control" aria-label="...">
-                  </div><!-- /input-group -->
-                </div><!-- /.col-lg-6 -->
-              <div class="col-lg-2">
-                <div class="input-group">
-                  <span class="input-group-addon">
-                    <input type="radio" aria-label="...">
-                  </span>
-                  <input type="text" class="form-control" aria-label="...">
-                </div><!-- /input-group -->
-              </div><!-- /.col-lg-6 -->
-            </div><!-- /.row -->
-            <div class="row">
-                <div class="col-lg-2">
-                  <div class="input-group">
-                    <span class="input-group-addon">
-                      <input type="checkbox" aria-label="...">
-                    </span>
-                    <input type="text" class="form-control" aria-label="...">
-                  </div><!-- /input-group -->
-                </div><!-- /.col-lg-6 -->
-                <div class="col-lg-2">
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <input type="checkbox" aria-label="...">
-                      </span>
-                      <input type="text" class="form-control" aria-label="...">
-                    </div><!-- /input-group -->
-                  </div><!-- /.col-lg-6 -->
-                <div class="col-lg-2">
-                  <div class="input-group">
-                    <span class="input-group-addon">
-                      <input type="radio" aria-label="...">
-                    </span>
-                    <input type="text" class="form-control" aria-label="...">
-                  </div><!-- /input-group -->
-                </div><!-- /.col-lg-6 -->
-              </div><!-- /.row -->
-      </div>        
-      <div id="locations">
-          <h3>Locations</h3>
-          <div class="row">
-              <div class="col-lg-2">
-                <div class="input-group">
-                  <span class="input-group-addon">
-                    <input type="checkbox" aria-label="...">
-                  </span>
-                  <input type="text" class="form-control" aria-label="...">
-                </div><!-- /input-group -->
-              </div><!-- /.col-lg-6 -->
-              <div class="col-lg-2">
-                  <div class="input-group">
-                    <span class="input-group-addon">
-                      <input type="checkbox" aria-label="...">
-                    </span>
-                    <input type="text" class="form-control" aria-label="...">
-                  </div><!-- /input-group -->
-                </div><!-- /.col-lg-6 -->
-              <div class="col-lg-2">
-                <div class="input-group">
-                  <span class="input-group-addon">
-                    <input type="radio" aria-label="...">
-                  </span>
-                  <input type="text" class="form-control" aria-label="...">
-                </div><!-- /input-group -->
-              </div><!-- /.col-lg-6 -->
-            </div><!-- /.row -->
-            <div class="row">
-                <div class="col-lg-2">
-                  <div class="input-group">
-                    <span class="input-group-addon">
-                      <input type="checkbox" aria-label="...">
-                    </span>
-                    <input type="text" class="form-control" aria-label="...">
-                  </div><!-- /input-group -->
-                </div><!-- /.col-lg-6 -->
-                <div class="col-lg-2">
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <input type="checkbox" aria-label="...">
-                      </span>
-                      <input type="text" class="form-control" aria-label="...">
-                    </div><!-- /input-group -->
-                  </div><!-- /.col-lg-6 -->
-                <div class="col-lg-2">
-                  <div class="input-group">
-                    <span class="input-group-addon">
-                      <input type="radio" aria-label="...">
-                    </span>
-                    <input type="text" class="form-control" aria-label="...">
-                  </div><!-- /input-group -->
-                </div><!-- /.col-lg-6 -->
-              </div><!-- /.row -->
-              <div class="row">
-                  <div class="col-lg-2">
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <input type="checkbox" aria-label="...">
-                      </span>
-                      <input type="text" class="form-control" aria-label="...">
-                    </div><!-- /input-group -->
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-lg-2">
-                      <div class="input-group">
-                        <span class="input-group-addon">
-                          <input type="checkbox" aria-label="...">
-                        </span>
-                        <input type="text" class="form-control" aria-label="...">
-                      </div><!-- /input-group -->
-                    </div><!-- /.col-lg-6 -->
-                  <div class="col-lg-2">
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <input type="radio" aria-label="...">
-                      </span>
-                      <input type="text" class="form-control" aria-label="...">
-                    </div><!-- /input-group -->
-                  </div><!-- /.col-lg-6 -->
-                </div><!-- /.row -->
-        </div>        
-    <!-- BUDGET CONTAINER -->
-    <div id="budget"></div>
- 
+    <div class="row">
+        <div class="col-md-8" id="elements-card"></div>
+        <div class="col-md-4" id="budget-card"></div>
+      </div>
+  </div>
   
   <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
