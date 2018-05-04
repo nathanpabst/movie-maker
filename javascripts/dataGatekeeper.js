@@ -1,18 +1,18 @@
 const xhr = require('./xhr');
-const data = require('/.data');
+const data = require('./data');
 const categoryDom = require('./categoryDom');
-const elementDom = require('./elementsDom');
+const elemDom = require('./elementsDom');
 
 const onCategoryLoad = function () {
   const categoryData = JSON.parse(this.responseText).categories;
   data.setCategories(categoryData);
-  elementDom(categoryData);
+  categoryDom(categoryData);
 };
 
 const onMovieElementLoad = function () {
   const movieData = JSON.parse(this.responseText).movies;
   data.setElements(movieData);
-  elementDom(movieData);
+  elemDom(movieData);
 };
 
 const badThings = function () {

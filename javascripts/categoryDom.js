@@ -5,9 +5,9 @@ const categoryDom = (categories) => {
   categories.forEach(category => {
     domString +=
     `<div class="row">
-    <h2<${category.categoryName}</h2>
-    <div id="${category.id} class="selections row>
-    </div>
+      <h2<${category.categoryName}</h2>
+      <div id="${category.id}" class="selections row">
+      </div>
     </div>`;
   });
   return domString;
