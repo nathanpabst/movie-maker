@@ -1,1 +1,3 @@
-console.log('oh hey, hi');
+const dataGatekeeper = require('./dataGatekeeper');
+
+dataGatekeeper.initializer();

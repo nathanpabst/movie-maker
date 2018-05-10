@@ -3,6 +3,7 @@ const loadCategories = (loadFunction, errorFunction) => {
   myRequest.addEventListener('load', loadFunction);
   myRequest.addEventListener('error', errorFunction);
   myRequest.open('GET', '../db/categories.json');
+  myRequest.send();
 };
 
 module.exports = loadCategories;

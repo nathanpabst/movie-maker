@@ -1,4 +1,4 @@
-const loadMovieElements = (loadFunction, errorFunction) => {
+const loadElements = (loadFunction, errorFunction) => {
   const myRequest = new XMLHttpRequest();
   myRequest.addEventListener('load', loadFunction);
   myRequest.addEventListener('error', errorFunction);
@@ -6,4 +6,4 @@ const loadMovieElements = (loadFunction, errorFunction) => {
   myRequest.send();
 };
 
-module.exports = loadMovieElements;
+module.exports = loadElements;
