@@ -1,27 +1,27 @@
-const xhr = require('./xhr');
+const loadElements = require('./elements');
+const loadCategories = require('./categories');
 const data = require('./data');
-const categoryDom = require('./categoryDom');
-// const elemDom = require('./elementsDom');
+const dom = require('./dom');
 
 const onCategoryLoad = function () {
   const categoryData = JSON.parse(this.responseText).categories;
   data.setCategories(categoryData);
-  categoryDom(categoryData);
+  dom(categoryData);
 };
 
-// const onMovieElementLoad = function () {
-//   const movieData = JSON.parse(this.responseText).movies;
-//   data.setElements(movieData);
-//   elemDom(movieData);
-// };
+const onElementLoad = function () {
+  const elementData = JSON.parse(this.responseText).elements;
+  data.setElements(elementData);
+  dom(elementData);
+};
 
 const badThings = function () {
   console.error('dang friggin crap!');
 };
 
 const initializer = () => {
-  // xhr.loadMovieElements(onMovieElementLoad, badThings);
-  xhr.loadCategories(onCategoryLoad, badThings);
+  loadCategories(onCategoryLoad, badThings);
+  loadElements(onElementLoad, badThings);
 };
 
 module.exports = {

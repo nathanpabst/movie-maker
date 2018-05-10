@@ -1,6 +1,5 @@
 let categories = [];
 let elements = [];
-// let budget = 0;
 
 const getCategories = () => {
   return categories;
