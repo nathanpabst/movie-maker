@@ -9,9 +9,6 @@
   <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-
-  <div class="main-container">
-
   <!-- NAVIGATION -->
     <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -19,27 +16,34 @@
           <a class="navbar-brand" href="#">Movie Maker</a>
         </div> 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <form class="navbar-form navbar-right" role="search">
-            <div class="form-group">
-              <input id="getAmount" type="text" class="form-control" placeholder="Enter Budget">
-            </div>
-              <button id="setAmount" type="submit" class="btn btn-default">Set Budget</button>
-          </form>
+          <button id="setAmount" type="submit" class="navbar-right btn btn-default">Set Budget</button>
+          <input id="getAmount" type="text" class="navbar-right" placeholder="Enter Budget">
         </div>
       </div>
     </nav>
-  <!-- PROGRESS BAR -->
+<!-- PROGRESS BAR -->
+  <div class="container-fluid">
     <div id="progress-bar" class="progress">
       <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
         <span class="sr-only">40% Complete (success)</span>
       </div>
-    </div>
-    <h4>Choose at least one from from each category</h4>
+    </div>  
+  </div>
+  <h4>Choose at least one from from each category</h4>
 
-    <!-- MOVIE ELEMENTS -->
+<!-- MOVIE ELEMENTS -->
+  <div class="container-fluid">
     <div class="row">
-        <div class="col-md-8" id="elements-card"></div>
-        <div class="col-md-4" id="budget-card"></div>
+      <div class="col-md-8 elements">
+        <div id="elements-card"></div>
+      </div>
+      <div class="col-md-4 text-center"> 
+        <div id="budget-card" class="budget">
+          <h3 id="userBudget" class="green">$0</h3>
+        </div>
+        <div id="selections"></div>
+        <div id="message"></div>
+      </div>  
     </div>
   </div>
   
