@@ -3,7 +3,7 @@ body {
 }
 #progress-bar {
   width: 60%;
-  margin: auto;
+  margin: 5px;
 }
 
 #budget {

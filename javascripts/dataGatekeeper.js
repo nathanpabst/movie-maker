@@ -2,6 +2,7 @@ const loadElements = require('./elements');
 const loadCategories = require('./categories');
 const data = require('./data');
 const dom = require('./dom');
+const events = require('./events');
 
 const onCategoryLoad = function () {
   const categoryData = JSON.parse(this.responseText).categories;
@@ -22,6 +23,7 @@ const badThings = function () {
 const initializer = () => {
   loadCategories(onCategoryLoad, badThings);
   loadElements(onElementLoad, badThings);
+  events.getBudget();
 };
 
 module.exports = {

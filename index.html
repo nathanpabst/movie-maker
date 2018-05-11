@@ -14,32 +14,33 @@
 
   <!-- NAVIGATION -->
     <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-              <a class="navbar-brand" href="#">Movie Maker</a>
-          </div> 
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <form class="navbar-form navbar-right" role="search">
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Enter Budget">
-                  </div>
-                  <button type="submit" id="set-budget" class="btn btn-default">Set Budget</button>
-              </form>
-          </div>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Movie Maker</a>
+        </div> 
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+              <input id="getAmount" type="text" class="form-control" placeholder="Enter Budget">
+            </div>
+              <button id="setAmount" type="submit" class="btn btn-default">Set Budget</button>
+          </form>
         </div>
-      </nav>
+      </div>
+    </nav>
   <!-- PROGRESS BAR -->
-  <h4>Choose at least one from from each category</h4>
     <div id="progress-bar" class="progress">
       <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
         <span class="sr-only">40% Complete (success)</span>
       </div>
     </div>
+    <h4>Choose at least one from from each category</h4>
+
     <!-- MOVIE ELEMENTS -->
     <div class="row">
         <div class="col-md-8" id="elements-card"></div>
         <div class="col-md-4" id="budget-card"></div>
-      </div>
+    </div>
   </div>
   
   <script
