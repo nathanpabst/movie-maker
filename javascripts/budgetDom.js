@@ -1,3 +1,16 @@
+const data = require('./data');
+
+const priceTag = () => {
+  const budgetAmt = data.getBudget() * 1;
+  const expenses = data.getCost() * 1;
+  const balance = budgetAmt - expenses;
+  return balance;
+};
+
+// const printPriceTag = () => {
+
+// };
+
 const printToBudget = (selections) => {
   const outputDiv = document.getElementById('selections');
   outputDiv.innerHTML = selectionOutput(selections);
@@ -13,4 +26,5 @@ const selectionOutput = (selections) => {
 
 module.exports = {
   printToBudget,
+  priceTag,
 };
