@@ -1,5 +1,12 @@
 const data = require('./data');
 
+const activateOptions = () => {
+  const checkBoxes = document.getElementsByClassName('check');
+  for (let i = 0; i < checkBoxes.length; i++) {
+    checkBoxes[i].disabled = false;
+  }
+};
+
 const sendBudgetAmt = () => {
   const userBudget = data.setBudget();
   document.getElementById('setAmount').disabled = true;
@@ -10,6 +17,7 @@ const budgetAmt = (e) => {
   const userInput = (document.getElementById('getAmount').value) * 1;
   data.getBudget(userInput);
   sendBudgetAmt();
+  activateOptions();
 };
 
 const budgetButton = () => {
