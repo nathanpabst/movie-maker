@@ -1,18 +1,26 @@
+/* MAIN STYLES */
 body {
   background-color: slategray;
 }
+
+/* PROGRESS BAR STYLES */
 #progress-bar {
   width: 60%;
   margin: 5px;
 }
 
-#budget {
-  box-sizing: content-box;
-  float: right;
-  display: inline;
-  width: 40%;
-  height: 80%;
+/* MOVIE ELEMENT STYLES */
+.elements {
+  float: left;
+}
+
+/* MOVIE BUDGET STYLES */
+.green {
+  color: green;
+  font-size: 2em;
+}
+
+.budget {
   border: solid black 2px;
-  margin: auto;
-  padding: 30px;
+  background-color: whitesmoke;
 }

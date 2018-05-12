@@ -23,7 +23,7 @@ const badThings = function () {
 const initializer = () => {
   loadCategories(onCategoryLoad, badThings);
   loadElements(onElementLoad, badThings);
-  events.getBudget();
+  events.budgetButton();
 };
 
 module.exports = {
