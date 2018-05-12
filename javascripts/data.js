@@ -1,6 +1,17 @@
 let categories = [];
 let elements = [];
 let budget = 0;
+let priceTag = 0;
+
+const setCost = (selections) => {
+  selections.forEach((selection) => {
+    priceTag += selection.cost;
+  });
+};
+
+const getCost = () => {
+  return priceTag;
+};
 
 const getBudget = userInput => {
   budget = userInput;
@@ -25,6 +36,8 @@ const setElements = (elementsArray) => {
 };
 
 module.exports = {
+  getCost,
+  setCost,
   getBudget,
   setBudget,
   getCategories,
