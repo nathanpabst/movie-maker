@@ -1,15 +1,15 @@
 const data = require('./data');
 
+// const printPriceTag = () => {
+
+// };
+
 const priceTag = () => {
   const budgetAmt = data.getBudget() * 1;
   const expenses = data.getCost() * 1;
   const balance = budgetAmt - expenses;
-  return balance;
+  data.setBudget(balance);
 };
-
-// const printPriceTag = () => {
-
-// };
 
 const printToBudget = (selections) => {
   const outputDiv = document.getElementById('selections');

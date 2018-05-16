@@ -13,11 +13,12 @@ const getCost = () => {
   return priceTag;
 };
 
-const getBudget = userInput => {
+const setBudget = userInput => {
   budget = userInput;
+  console.log('from setBudget', userInput);
 };
 
-const setBudget = () => budget;
+const getBudget = () => budget;
 
 const getCategories = () => {
   return categories;
