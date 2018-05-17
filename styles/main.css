@@ -20,6 +20,10 @@ body {
   font-size: 2em;
 }
 
+.red {
+  color: red;
+}
+
 .budget {
   border: solid black 2px;
   background-color: whitesmoke;

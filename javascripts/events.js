@@ -7,15 +7,15 @@ const selections = [];
 const findSelections = (e) => {
   movieElements = data.getElements();
   const selectedElement = e.target;
-  // console.log(e.target);
   selectedElement.setAttribute('disabled', 'disabled');
   movieElements.forEach((element) => {
     if (element.id === selectedElement.id && selections.indexOf(element) === -1) {
-      // console.log(element);
       selections.push(element);
+      data.setCost(selections);
+      budgetDom.priceTag();
+      sendBudgetAmt();
     };
   });
-  data.setCost(selections);
   budgetDom.printToBudget(selections);
 };
 
@@ -28,14 +28,14 @@ const activateChecks = () => {
 };
 
 const sendBudgetAmt = () => {
-  const userBudget = data.setBudget();
+  const userBudget = data.getBudget();
   document.getElementById('setAmount').disabled = true;
   document.getElementById('userBudget').innerHTML = `<h3>$${userBudget}</h3>`;
 };
 
 const budgetAmt = (e) => {
   const userInput = (document.getElementById('getAmount').value) * 1;
-  data.getBudget(userInput);
+  data.setBudget(userInput);
   sendBudgetAmt();
   activateChecks();
 };
@@ -48,4 +48,5 @@ const budgetButton = () => {
 module.exports = {
   budgetButton,
   activateChecks,
+  sendBudgetAmt,
 };
