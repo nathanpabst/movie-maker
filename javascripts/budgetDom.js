@@ -8,6 +8,7 @@ const priceTag = () => {
   if (balance < 0) {
     document.getElementById('userBudget').classList.add('red');
     document.getElementById('userBudget').classList.remove('green');
+    document.getElementById('message').innerHTML = `<h3 class="red">Sorry, insuffient funds.</h3>`;
   }
 };
 
