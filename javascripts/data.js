@@ -15,7 +15,7 @@ const getCost = () => {
 
 const setBudget = userInput => {
   budget = userInput;
-  console.log('from setBudget', userInput);
+  // console.log('from setBudget', userInput);
 };
 
 const getBudget = () => budget;

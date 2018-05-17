@@ -7,16 +7,13 @@ const selections = [];
 const findSelections = (e) => {
   movieElements = data.getElements();
   const selectedElement = e.target;
-  // console.log(e.target);
   selectedElement.setAttribute('disabled', 'disabled');
   movieElements.forEach((element) => {
     if (element.id === selectedElement.id && selections.indexOf(element) === -1) {
-      // console.log(typeof element.cost);
       selections.push(element);
       data.setCost(selections);
       budgetDom.priceTag();
       sendBudgetAmt();
-
     };
   });
   budgetDom.printToBudget(selections);
