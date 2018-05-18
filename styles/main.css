@@ -4,9 +4,21 @@ body {
 }
 
 /* PROGRESS BAR STYLES */
-#progress-bar {
+.progress {
   width: 60%;
   margin: 5px;
+}
+.twentyFive {
+  width: 25%;
+}
+.fifty {
+  width: 50%;
+}
+.seventyFive {
+  width: 75%;
+}
+.oneHundred {
+  width: 100%;
 }
 
 /* MOVIE ELEMENT STYLES */
