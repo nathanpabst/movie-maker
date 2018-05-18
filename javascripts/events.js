@@ -1,5 +1,6 @@
 const data = require('./data');
 const budgetDom = require('./budgetDom');
+const updateProgress = require('./progressDOM');
 
 let movieElements = [];
 const selections = [];
@@ -7,6 +8,7 @@ const selections = [];
 const findSelections = (e) => {
   movieElements = data.getElements();
   const selectedElement = e.target;
+  // console.log('from events.js', selectedElement);
   selectedElement.setAttribute('disabled', 'disabled');
   movieElements.forEach((element) => {
     if (element.id === selectedElement.id && selections.indexOf(element) === -1) {
@@ -17,6 +19,7 @@ const findSelections = (e) => {
     };
   });
   budgetDom.printToBudget(selections);
+  updateProgress(selections);
 };
 
 const activateChecks = () => {
