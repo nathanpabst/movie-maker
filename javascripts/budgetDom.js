@@ -1,4 +1,12 @@
 const data = require('./data');
+// const progressDOM = require('./progressDOM');
+
+// const canHasMovie = () => {
+//   if (data.getBudget() >= 0) {
+//     document.getElementById('userBudget').classList.add('green');
+//     document.getElementById('userBudget').classList.remove('red');
+//     document.getElementById('message').innerHTML = `<h3 class="green">Let's make this movie!!</h3>`;
+// };
 
 const priceTag = () => {
   const budgetAmt = data.getBudget() * 1;
