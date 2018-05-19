@@ -1,6 +1,6 @@
 const data = require('./data');
 const budgetDom = require('./budgetDom');
-const updateProgress = require('./progressDOM');
+const progressDOM = require('./progressDOM');
 
 let movieElements = [];
 const selections = [];
@@ -19,7 +19,7 @@ const findSelections = (e) => {
     };
   });
   budgetDom.printToBudget(selections);
-  updateProgress(selections);
+  progressDOM.updateProgress(selections);
 };
 
 const activateChecks = () => {

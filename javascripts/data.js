@@ -26,7 +26,7 @@ const getCategories = () => {
 
 const setCategories = (categoriesArray) => {
   categories = categoriesArray;
-  console.log('from data.js', categories);
+  // console.log('from data.js', categories);
 };
 
 const getElements = () => {
