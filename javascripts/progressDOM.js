@@ -15,7 +15,12 @@ const updateProgress = (selections) => {
     document.getElementById('userBudget').classList.add('green');
     document.getElementById('userBudget').classList.remove('red');
     document.getElementById('message').innerHTML = `<h3 class="green">Let's make this movie!!</h3>`;
-  }
+  } else if (whichCategory.length === 4 && data.getBudget() < 0) {
+    progressBar.classList.add('oneHundred');
+    document.getElementById('userBudget').classList.add('red');
+    document.getElementById('userBudget').classList.remove('green');
+    document.getElementById('message').innerHTML = `<h3 class="red">Sorry, insuffient funds.</h3>`;
+  };
 };
 
 module.exports = {
