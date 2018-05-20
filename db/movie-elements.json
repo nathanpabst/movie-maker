@@ -110,55 +110,55 @@
 		{
 			"id": "SpecialEffect1",
 			"categoryId": "SpecialEffect",
-			"name": "digital compositing",
+			"name": "Digital Compositing",
 			"cost": 750.0
 		},
 		{
 			"id": "SpecialEffect2",
 			"categoryId": "SpecialEffect",
-			"name": "dolly zoom",
+			"name": "Dolly Zoom",
 			"cost": 750.0
 		},
 		{
 			"id": "SpecialEffect3",
 			"categoryId": "SpecialEffect",
-			"name": "match moving",
+			"name": "Match Moving",
 			"cost": 1000.0
 		},
 		{
 			"id": "SpecialEffect4",
 			"categoryId": "SpecialEffect",
-			"name": "miniture effects",
+			"name": "Miniture Effects",
 			"cost": 1250.0
 		},
 		{
 			"id": "SpecialEffect5",
 			"categoryId": "SpecialEffect",
-			"name": "morphing",
+			"name": "Morphing",
 			"cost": 1500.0
 		},
 		{
 			"id": "SpecialEffect6",
 			"categoryId": "SpecialEffect",
-			"name": "prosthetic makeup",
+			"name": "Prosthetic Makeup",
 			"cost": 1750.0
 		},
 		{
 			"id": "SpecialEffect7",
 			"categoryId": "SpecialEffect",
-			"name": "rotoscoping",
+			"name": "Rotoscoping",
 			"cost": 2000.0
 		},
 		{
 			"id": "SpecialEffect8",
 			"categoryId": "SpecialEffect",
-			"name": "go motion",
+			"name": "Go Motion",
 			"cost": 2250.0
 		},
 		{
 			"id": "SpecialEffect9",
 			"categoryId": "SpecialEffect",
-			"name": "virtual cinematography",
+			"name": "Virtual Cinematography",
 			"cost": 2500.0
 		},
 		{
