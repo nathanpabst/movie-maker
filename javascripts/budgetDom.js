@@ -1,12 +1,4 @@
 const data = require('./data');
-// const progressDOM = require('./progressDOM');
-
-// const canHasMovie = () => {
-//   if (data.getBudget() >= 0) {
-//     document.getElementById('userBudget').classList.add('green');
-//     document.getElementById('userBudget').classList.remove('red');
-//     document.getElementById('message').innerHTML = `<h3 class="green">Let's make this movie!!</h3>`;
-// };
 
 const priceTag = () => {
   const budgetAmt = data.getBudget() * 1;
@@ -16,7 +8,7 @@ const priceTag = () => {
   if (balance < 0) {
     document.getElementById('userBudget').classList.add('red');
     document.getElementById('userBudget').classList.remove('green');
-    document.getElementById('message').innerHTML = `<h3 class="red">Sorry, insuffient funds.</h3>`;
+    document.getElementById('message').innerHTML = `<h2 class="red">Sorry, insuffient funds.</h2>`;
   }
 };
 
@@ -28,7 +20,7 @@ const printToBudget = (selections) => {
 const selectionOutput = (selections) => {
   let output = '';
   selections.forEach((selection) => {
-    output += `<h4>${selection.name}: $${selection.cost}</h4>`;
+    output += `<h3>${selection.name}: $${selection.cost}</h3>`;
   });
   return output;
 };
@@ -36,5 +28,4 @@ const selectionOutput = (selections) => {
 module.exports = {
   printToBudget,
   priceTag,
-  // canHasMovie,
 };
